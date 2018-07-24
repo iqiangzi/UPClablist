@@ -19,7 +19,7 @@ $password = MD5($_POST['password']);
 //包含数据库连接文件
 include('conn.php');
 //检测用户名及密码是否正确
-$check_query = mysql_query("select uid from user where username='$username' and password='$password' 
+$check_query = mysql_query("select uid from user where username='$姓名' and password='$学号' 
 limit 1");
 if($result = mysql_fetch_array($check_query)){
     //登录成功
