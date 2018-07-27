@@ -23,8 +23,8 @@ $check_query = mysql_query("select uid from user where username='$姓名' and pa
 limit 1");
 if($result = mysql_fetch_array($check_query)){
     //登录成功
-    $_SESSION['username'] = $username;
-    $_SESSION['userid'] = $result['uid'];
+    $_SESSION['姓名'] = $username;
+    $_SESSION['学号'] = $result['uid'];
     echo $username,' 欢迎你！进入 <a href="my.php">用户中心</a><br />';
     echo '点击此处 <a href="login.php?action=logout">注销</a> 登录！<br />';
     exit;
